@@ -149,6 +149,10 @@
             "state": "auto"
         },
         {
+            "name": "pyqt",
+            "state": "manual"
+        },
+        {
             "name": "python_dateutil",
             "state": "manual"
         },
@@ -159,6 +163,10 @@
         {
             "name": "pyyaml",
             "state": "manual"
+        },
+        {
+            "name": "qt",
+            "state": "auto"
         },
         {
             "name": "scikit_learn",
@@ -174,6 +182,10 @@
         },
         {
             "name": "singledispatch",
+            "state": "auto"
+        },
+        {
+            "name": "sip",
             "state": "auto"
         },
         {
@@ -262,13 +274,16 @@
         "protobuf_python-3.3.1-1",
         "pycparser-2.14-2",
         "pyparsing-2.2.0-1",
+        "pyqt-4.12-1",
         "python_dateutil-2.6.0-1",
         "pytz-2016.3-1",
         "pyyaml-3.12-1",
+        "qt-4.8.7-7",
         "scikit_learn-0.18.1-4",
         "scipy-0.19.0-1",
         "setuptools-34.3.3-1",
         "singledispatch-3.4.0.3-1",
+        "sip-4.19.2-2",
         "six-1.10.0-1",
         "ssl_match_hostname-3.5.0.1-1",
         "stevedore-1.2.0-20",
