@@ -232,15 +232,14 @@ def test_sound_clip(sound_file, interf_file):
     noisy_masked_clip = noisy_clip.apply_mask(ideal_mask)
     noisy_masked_clip.play()
     noisy_masked_clip.plot_spectrogram()
-
     pass
 
 
-sp_path = "/shared/Projects/speech_signal_proc/CHiME3/data/audio/16kHz/isolated/"
-speech_ref = [os.path.join(sp_path, "et05_bth/F06_441C020K_BTH.CH1.wav"),
-              ]
-
-interference_path = "/shared/Projects/speech_signal_proc/other_sounds"
-interferer = [os.path.join(interference_path, "siren_clip.wav"),
-              ]
-test_sound_clip(speech_ref[0], interferer[0])
+if __name__ == "__main__":
+    sp_path = "/shared/Projects/speech_signal_proc/CHiME3/data/audio/16kHz/isolated/"
+    speech_ref = [os.path.join(sp_path, "et05_bth/F06_441C020K_BTH.CH1.wav"),
+                  ]
+    interference_path = "/shared/Projects/speech_signal_proc/other_sounds"
+    interferer = [os.path.join(interference_path, "siren_clip.wav"),
+                  ]
+    test_sound_clip(speech_ref[0], interferer[0])
