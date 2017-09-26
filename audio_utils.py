@@ -48,9 +48,6 @@ class SoundClip(object):
     def from_wav(cls, filename, window_len=1024):
         """
          Construct a SoundClip from a .wav file.
-        :param filename
-        :param window_len
-        :rtype
 
         Parameters
         ----------
@@ -67,12 +64,36 @@ class SoundClip(object):
         fs, data = wavfile.read(filename)
         return cls(fs, data, window_len)
 
+    @classmethod
+    def from_stft(cls, Zxx, fs, window_len=1024):
+        """
+         Construct a SoundClip from a STFT array.
+
+        Parameters
+        ----------
+        Zxx : np.ndarray
+            complex matrix containing the STFT of the sound clip.
+        fs : float
+            sampling frequency.
+        window_len : int
+            length of the window for stft analysis.
+
+        Returns
+        -------
+        SoundClip
+
+        """
+        sc = cls(fs, np.zeros(window_len, dtype=np.int16), window_len)
+        sc.Zxx = Zxx
+        sc.istft()
+        return sc
+
     @property
     def duration(self) -> float:
         return len(self.data) / self.fs  # seconds
 
-    def play(self):
-        sd.play(self.data, self.fs)
+    def play(self,  blocking=False):
+        sd.play(self.data, self.fs,  blocking=blocking)
 
     def get_sp_mask(self, threshold=10.0, low_prob=0.0):
         """
@@ -221,16 +242,16 @@ def test_sound_clip(sound_file, interf_file):
     plt.xlabel('Time index')
 
     masked_clip = clip.apply_mask(ideal_mask)
-    masked_clip.play()
+    masked_clip.play(blocking=True)
     masked_clip.plot_spectrogram()
 
     # try adding some interference and apply the mask
     interf_clip = SoundClip.from_wav(interf_file)
     noisy_clip = clip.mix_clip(interf_clip, start_time=0.0, scale=1.0)
-    noisy_clip.play()
+    noisy_clip.play(blocking=True)
     noisy_clip.plot_spectrogram()
     noisy_masked_clip = noisy_clip.apply_mask(ideal_mask)
-    noisy_masked_clip.play()
+    noisy_masked_clip.play(blocking=True)
     noisy_masked_clip.plot_spectrogram()
     pass
 
