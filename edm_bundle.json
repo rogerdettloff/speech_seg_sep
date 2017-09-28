@@ -1,0 +1,302 @@
+{
+    "mark": [
+        {
+            "name": "appdirs",
+            "state": "auto"
+        },
+        {
+            "name": "backports.abc",
+            "state": "auto"
+        },
+        {
+            "name": "backports.weakref",
+            "state": "auto"
+        },
+        {
+            "name": "backports_abc_remove",
+            "state": "auto"
+        },
+        {
+            "name": "biopython",
+            "state": "manual"
+        },
+        {
+            "name": "bleach",
+            "state": "auto"
+        },
+        {
+            "name": "certifi",
+            "state": "auto"
+        },
+        {
+            "name": "cffi",
+            "state": "manual"
+        },
+        {
+            "name": "configobj",
+            "state": "auto"
+        },
+        {
+            "name": "cycler",
+            "state": "auto"
+        },
+        {
+            "name": "cython",
+            "state": "manual"
+        },
+        {
+            "name": "freetype",
+            "state": "manual"
+        },
+        {
+            "name": "funcsigs",
+            "state": "auto"
+        },
+        {
+            "name": "h5py",
+            "state": "manual"
+        },
+        {
+            "name": "haas",
+            "state": "manual"
+        },
+        {
+            "name": "hdf5",
+            "state": "manual"
+        },
+        {
+            "name": "html5lib",
+            "state": "auto"
+        },
+        {
+            "name": "libffi",
+            "state": "manual"
+        },
+        {
+            "name": "libgfortran",
+            "state": "manual"
+        },
+        {
+            "name": "libjpeg",
+            "state": "manual"
+        },
+        {
+            "name": "libopenjpeg",
+            "state": "manual"
+        },
+        {
+            "name": "libpng",
+            "state": "manual"
+        },
+        {
+            "name": "libyaml",
+            "state": "auto"
+        },
+        {
+            "name": "matplotlib",
+            "state": "manual"
+        },
+        {
+            "name": "mkl",
+            "state": "manual"
+        },
+        {
+            "name": "mock",
+            "state": "manual"
+        },
+        {
+            "name": "nose",
+            "state": "manual"
+        },
+        {
+            "name": "numexpr",
+            "state": "manual"
+        },
+        {
+            "name": "numpy",
+            "state": "manual"
+        },
+        {
+            "name": "packaging",
+            "state": "auto"
+        },
+        {
+            "name": "pandas",
+            "state": "manual"
+        },
+        {
+            "name": "pbr",
+            "state": "auto"
+        },
+        {
+            "name": "pip",
+            "state": "manual"
+        },
+        {
+            "name": "protobuf",
+            "state": "auto"
+        },
+        {
+            "name": "protobuf_python",
+            "state": "manual"
+        },
+        {
+            "name": "pycparser",
+            "state": "auto"
+        },
+        {
+            "name": "pyparsing",
+            "state": "auto"
+        },
+        {
+            "name": "pyqt",
+            "state": "manual"
+        },
+        {
+            "name": "python_dateutil",
+            "state": "manual"
+        },
+        {
+            "name": "pytz",
+            "state": "manual"
+        },
+        {
+            "name": "pyyaml",
+            "state": "manual"
+        },
+        {
+            "name": "qt",
+            "state": "auto"
+        },
+        {
+            "name": "scikit_learn",
+            "state": "manual"
+        },
+        {
+            "name": "scipy",
+            "state": "manual"
+        },
+        {
+            "name": "setuptools",
+            "state": "manual"
+        },
+        {
+            "name": "singledispatch",
+            "state": "auto"
+        },
+        {
+            "name": "sip",
+            "state": "auto"
+        },
+        {
+            "name": "six",
+            "state": "auto"
+        },
+        {
+            "name": "ssl_match_hostname",
+            "state": "auto"
+        },
+        {
+            "name": "stevedore",
+            "state": "auto"
+        },
+        {
+            "name": "tensorflow",
+            "state": "manual"
+        },
+        {
+            "name": "tornado",
+            "state": "auto"
+        },
+        {
+            "name": "traits",
+            "state": "manual"
+        },
+        {
+            "name": "webencodings",
+            "state": "auto"
+        },
+        {
+            "name": "wheel",
+            "state": "manual"
+        }
+    ],
+    "metadata_version": "1.0",
+    "modifiers": {
+        "allow_any": [],
+        "allow_newer": [],
+        "allow_older": []
+    },
+    "repositories": {
+        "packages": [
+            "enthought/commercial",
+            "enthought/free"
+        ],
+        "runtimes": [
+            "enthought/free"
+        ]
+    },
+    "requirements": [
+        "appdirs-1.4.3-1",
+        "backports.abc-0.5-1",
+        "backports.weakref-1.0rc1-1",
+        "backports_abc_remove-0.4-2",
+        "biopython-1.68-1",
+        "bleach-1.5.0-2",
+        "certifi-2017.7.27.1-1",
+        "cffi-1.9.1-3",
+        "configobj-5.0.6-2",
+        "cycler-0.10.0-1",
+        "cython-0.25.2-1",
+        "freetype-2.5.3-7",
+        "funcsigs-1.0.2-1",
+        "h5py-2.7.0-1",
+        "haas-0.8.0-3",
+        "hdf5-1.8.16-4",
+        "html5lib-0.9999999-1",
+        "libffi-3.0.13-3",
+        "libgfortran-3.0.0-4",
+        "libjpeg-7.0-5",
+        "libopenjpeg-2.1.0-4",
+        "libpng-1.6.12-6",
+        "libyaml-0.1.7-1",
+        "matplotlib-2.0.0-3",
+        "mkl-2017.0.1-2",
+        "mock-2.0.0-1",
+        "nose-1.3.7-3",
+        "numexpr-2.6.2-1",
+        "numpy-1.11.3-2",
+        "packaging-16.8-2",
+        "pandas-0.19.2-4",
+        "pbr-1.8.1-11",
+        "pip-9.0.1-1",
+        "protobuf-3.3.1-1",
+        "protobuf_python-3.3.1-1",
+        "pycparser-2.14-2",
+        "pyparsing-2.2.0-1",
+        "pyqt-4.12-1",
+        "python_dateutil-2.6.0-1",
+        "pytz-2016.3-1",
+        "pyyaml-3.12-1",
+        "qt-4.8.7-7",
+        "scikit_learn-0.18.1-4",
+        "scipy-0.19.0-1",
+        "setuptools-34.3.3-1",
+        "singledispatch-3.4.0.3-1",
+        "sip-4.19.2-2",
+        "six-1.10.0-1",
+        "ssl_match_hostname-3.5.0.1-1",
+        "stevedore-1.2.0-20",
+        "tensorflow-1.3.0-1",
+        "tornado-4.4.2-3",
+        "traits-4.6.0-1",
+        "webencodings-0.5.1-1",
+        "wheel-0.29.0-6"
+    ],
+    "runtime": {
+        "implementation": "cpython",
+        "platform": "rh6_x86_64",
+        "platform_abi": "gnu",
+        "version": "3.6.0+7"
+    }
+}
